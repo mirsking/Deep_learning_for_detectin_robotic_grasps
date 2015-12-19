@@ -202,8 +202,8 @@ for epoch = 1:maxepoch
 
     end
 
- save ~/backpropData/classify_weights w1 w2 w_class
- save ~/backpropData/classify_error test_err test_crerr train_err train_crerr;
+ save ../weights/backpropData/classify_weights w1 w2 w_class
+ save ../weights/backpropData/classify_error test_err test_crerr train_err train_crerr;
 
 end
 
