@@ -1,10 +1,9 @@
-% Set this to the path to your folder containing the Cornell Grasping
-% Dataset (this folder should contain a lot of pcd_* files)
-dataDir = '~/data/rawDataSet';
-
 % Load the grasping dataset
 cd loadData/
-[depthFeat, colorFeat, normFeat, classes, inst, accepted, depthMask, colorMask]  = loadAllGraspingDataImYUVNormals('~/data/rawDataSet');
+% Set this to the path to your folder containing the Cornell Grasping
+% Dataset (this folder should contain a lot of pcd_* files)
+dataDir = '../data';
+[depthFeat, colorFeat, normFeat, classes, inst, accepted, depthMask, colorMask]  = loadAllGraspingDataImYUVNormals(dataDir);
 classes = logical(classes);
 
 % Process data, splitting into train/test sets and whitening
