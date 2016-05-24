@@ -13,7 +13,7 @@ function [cost,grad] = multimodalRegL0(W,modes,params)
 numModes = max(modes(:));
 
 cost = 0;
-grad = zeros(size(W));
+grad = zeros(size(W), class(W));
 
 % Compute cost and gradient for each mode
 for i = 1:numModes

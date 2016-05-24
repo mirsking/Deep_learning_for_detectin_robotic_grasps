@@ -1,0 +1,7 @@
+/deepGraspingCode/data/pcd*.txt
+/deepGraspingCode/data/backgrounds/pcd*.png
+/deepGraspingCode/data/pcd*.png
+/deepGraspingCode/weights/*
+/result/
+
+*.asv
